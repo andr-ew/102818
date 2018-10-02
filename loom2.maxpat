@@ -296,7 +296,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "int" ],
 					"patching_rect" : [ 143.625, 307.0, 188.0, 21.0 ],
-					"text" : "pattrns.grid.value 15 1 2 11 4"
+					"text" : "pattrns.grid.value 15 1 2 11 0"
 				}
 
 			}
@@ -327,19 +327,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 57.3074951171875, 430.0, 188.0, 21.0 ],
-					"text" : "pattrns.grid.keys 3 15 15 11 0"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-19",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 66.8074951171875, 205.0, 24.0, 24.0 ]
+					"text" : "pattrns.grid.keys 3 15 15 11 4"
 				}
 
 			}
@@ -373,7 +361,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 681.3074951171875, 597.0, 48.0, 21.0 ],
+					"patching_rect" : [ 758.05474853515625, 597.0, 48.0, 21.0 ],
 					"text" : "dac~"
 				}
 
@@ -396,7 +384,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 748.3880615234375, 173.0, 48.0, 21.0 ],
+					"patching_rect" : [ 758.05474853515625, 174.0, 48.0, 21.0 ],
 					"text" : "adc~"
 				}
 
@@ -408,7 +396,7 @@
 					"numinlets" : 4,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "signal", "signal" ],
-					"patching_rect" : [ 719.3880615234375, 369.0, 77.0, 21.0 ],
+					"patching_rect" : [ 700.05474853515625, 369.0, 106.0, 21.0 ],
 					"text" : "channel 0 3",
 					"varname" : "channel[3]"
 				}
@@ -421,7 +409,7 @@
 					"numinlets" : 4,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "signal", "signal" ],
-					"patching_rect" : [ 567.9254150390625, 369.0, 77.0, 21.0 ],
+					"patching_rect" : [ 564.0, 369.0, 104.0, 21.0 ],
 					"text" : "channel 0 2",
 					"varname" : "channel[2]"
 				}
@@ -434,7 +422,7 @@
 					"numinlets" : 4,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "signal", "signal" ],
-					"patching_rect" : [ 416.46270751953125, 369.0, 74.0, 21.0 ],
+					"patching_rect" : [ 407.0, 369.0, 103.96270751953125, 21.0 ],
 					"text" : "channel 0 1",
 					"varname" : "channel[1]"
 				}
@@ -447,7 +435,7 @@
 					"numinlets" : 4,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "signal", "signal" ],
-					"patching_rect" : [ 265.0, 369.0, 74.0, 21.0 ],
+					"patching_rect" : [ 265.0, 369.0, 103.0, 21.0 ],
 					"text" : "channel 0 0",
 					"varname" : "channel"
 				}
@@ -610,13 +598,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
 					"source" : [ "obj-18", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-47", 0 ],
-					"source" : [ "obj-19", 0 ]
 				}
 
 			}
@@ -1049,13 +1030,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "pattrns.varispeedrecorder.maxpat",
-				"bootpath" : "~/Documents/code/loom2",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "serialosc.maxpat",
 				"bootpath" : "C74:/packages/BEAP/patchers",
 				"type" : "JSON",
@@ -1090,12 +1064,12 @@
 , 			{
 				"name" : "a.ke",
 				"default" : 				{
-					"accentcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
-					"fontname" : [ "Andale Mono" ],
-					"selectioncolor" : [ 0.960784, 0.827451, 0.156863, 1.0 ],
 					"bgcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
 					"fontface" : [ 0 ],
-					"patchlinecolor" : [ 0.960784, 0.827451, 0.156863, 0.9 ]
+					"selectioncolor" : [ 0.960784, 0.827451, 0.156863, 1.0 ],
+					"patchlinecolor" : [ 0.960784, 0.827451, 0.156863, 0.9 ],
+					"accentcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
+					"fontname" : [ "Andale Mono" ]
 				}
 ,
 				"parentstyle" : "",
@@ -1104,6 +1078,10 @@
 , 			{
 				"name" : "irv",
 				"default" : 				{
+					"bgcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"patchlinecolor" : [ 0.0, 0.0, 0.0, 0.9 ],
+					"color" : [ 0.941176, 0.690196, 0.196078, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -1115,11 +1093,7 @@
 					}
 ,
 					"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
-					"fontname" : [ "Inconsolata Regular" ],
-					"color" : [ 0.941176, 0.690196, 0.196078, 1.0 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-					"patchlinecolor" : [ 0.0, 0.0, 0.0, 0.9 ]
+					"fontname" : [ "Inconsolata Regular" ]
 				}
 ,
 				"parentstyle" : "",
@@ -1197,8 +1171,8 @@
 , 			{
 				"name" : "rsliderGold",
 				"default" : 				{
-					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 917.0, 79.0, 563.0, 760.0 ],
+		"rect" : [ 843.0, 79.0, 563.0, 760.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -46,19 +46,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 157.0, 303.0, 50.0, 22.0 ],
 					"text" : "bang"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-43",
-					"linecount" : 2,
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 412.0, 555.0, 50.0, 35.0 ],
-					"text" : "93756.6"
 				}
 
 			}
@@ -777,15 +764,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-261", 1 ],
-					"order" : 1,
-					"source" : [ "obj-255", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-43", 1 ],
-					"order" : 0,
 					"source" : [ "obj-255", 0 ]
 				}
 
@@ -1060,10 +1038,6 @@
 , 			{
 				"name" : "irv",
 				"default" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"color" : [ 0.941176, 0.690196, 0.196078, 1.0 ],
-					"fontname" : [ "Inconsolata Regular" ],
-					"patchlinecolor" : [ 0.0, 0.0, 0.0, 0.9 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -1074,8 +1048,12 @@
 						"autogradient" : 0
 					}
 ,
+					"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"fontname" : [ "Inconsolata Regular" ],
+					"color" : [ 0.941176, 0.690196, 0.196078, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"bgcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-					"accentcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
+					"patchlinecolor" : [ 0.0, 0.0, 0.0, 0.9 ]
 				}
 ,
 				"parentstyle" : "",
@@ -1134,8 +1112,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
